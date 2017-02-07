@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.saphmb.com.cookieclicker.MainActivity">
+    <ImageView
+        android:id="@+id/cookie"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:src="@drawable/cookie"
+        android:layout_centerInParent="true"
+        />
+
+    <ImageView
+        android:id="@+id/cookie2"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:src="@drawable/cookie"
+        android:layout_below="@id/cookie"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"
+        />
+
+    <TextView
+        android:id="@+id/score"
+        android:layout_above="@id/cookie"
+        android:layout_marginBottom="16dp"
+        android:textSize="32sp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0" />
+</RelativeLayout>
